@@ -1,0 +1,130 @@
+{
+  "mahasiswa": [
+    {
+      "id": "1",
+      "nama": "Andi Setiawan",
+      "nim": "A11.2020.00001",
+      "status": true,
+      "max_sks": 24
+    },
+    {
+      "id": "2",
+      "nama": "Budi Rahardjo",
+      "nim": "A11.2020.00002",
+      "status": true,
+      "max_sks": 20
+    },
+    {
+      "id": "3",
+      "nama": "Citra Lestari",
+      "nim": "A11.2020.00003",
+      "status": true,
+      "max_sks": 22
+    },
+    {
+      "id": "4",
+      "nama": "Deni Wijaya",
+      "nim": "A11.2020.00004",
+      "status": false,
+      "max_sks": 18
+    },
+    {
+      "id": "5",
+      "nama": "Eka Putri",
+      "nim": "A11.2020.00005",
+      "status": true,
+      "max_sks": 24
+    }
+  ],
+  "dosen": [
+    {
+      "id": "1",
+      "nidn": "0601020304",
+      "nama": "Dr. Supriadi, M.Kom",
+      "max_sks": 12
+    },
+    {
+      "id": "2",
+      "nidn": "0601020305",
+      "nama": "Ir. Hermawan, M.T.",
+      "max_sks": 10
+    },
+    {
+      "id": "3",
+      "nidn": "0601020306",
+      "nama": "Prof. Siti Aminah, Ph.D.",
+      "max_sks": 14
+    }
+  ],
+  "matakuliah": [
+    {
+      "id": "1",
+      "kode": "A11.54321",
+      "nama": "Pemrograman Web",
+      "sks": 3
+    },
+    {
+      "id": "2",
+      "kode": "A11.54322",
+      "nama": "Struktur Data",
+      "sks": 4
+    },
+    {
+      "id": "3",
+      "kode": "A11.54323",
+      "nama": "Basis Data",
+      "sks": 3
+    }
+  ],
+  "kelas": [
+    {
+      "id": "1",
+      "mata_kuliah_id": "1",
+      "dosen_id": "2",
+      "mahasiswa_ids": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name": "Admin 1",
+      "email": "admin@mail.com",
+      "password": "admin123",
+      "role": "admin",
+      "permission": [
+        "dashboard.page",
+        "mahasiswa.page",
+        "mahasiswa.read",
+        "mahasiswa.create",
+        "mahasiswa.update",
+        "mahasiswa.delete",
+        "dosen.page",
+        "matakuliah.page",
+        "rencana-studi.page",
+        "rencana-studi.read",
+        "rencana-studi.create",
+        "rencana-studi.update",
+        "rencana-studi.delete"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Mahasiswa 1",
+      "email": "mahasiswa@mail.com",
+      "password": "mahasiswa123",
+      "role": "mahasiswa",
+      "permission": [
+        "dashboard.page",
+        "mahasiswa.page",
+        "mahasiswa.read",
+        "rencana-studi.page",
+        "rencana-studi.read"
+      ]
+    }
+  ]
+}
