@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const AxiosInstance = axios.create({
-  baseURL: "http://localhost:3001", // Pastikan hurufnya bener dan nggak ada typo
+  baseURL: "https://github.com/Nadzirin26/backend-tugas.git", // Pastikan hurufnya bener dan nggak ada typo
   headers: {
     "Content-Type": "application/json",
   },
